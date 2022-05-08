@@ -5,7 +5,7 @@ func reverse(input []int64) (result []int64) {
 		return input
 	}
 
-	for i := len(input); i > -1; i-- {
+	for i := len(input) - 1; i > -1; i-- {
 		result = append(result, input[i])
 	}
 
