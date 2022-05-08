@@ -1,7 +1,7 @@
 package homework
 
 func sortMapValues(input map[int]string) (result []string) {
-	if input == nil {
+	if len(input) == 0 {
 		return nil
 	}
 	keys := make([]int, 0, len(input))

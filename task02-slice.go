@@ -1,7 +1,7 @@
 package homework
 
 func reverse(input []int64) (result []int64) {
-	if input == nil || len(input) == 0 {
+	if len(input) == 0 {
 		return input
 	}
 	reversedInput := make([]int64, len(input))
