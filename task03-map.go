@@ -3,6 +3,9 @@ package homework
 import "sort"
 
 func sortMapValues(input map[int]string) (result []string) {
+	if len(input) == 0 {
+		return []string{}
+	}
 	keys := make([]int, 0, len(input))
 	for k := range input {
 		keys = append(keys, k)
