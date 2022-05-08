@@ -15,7 +15,7 @@ func sortMapValues(input map[int]string) (result []string) {
 			}
 		}
 	}
-	result := make([]string, 0, len(input))
+	result = make([]string, 0, len(input))
 	for i := 0; i < len(input); i++ {
 		result[i] = input[keys[i]]
 	}
